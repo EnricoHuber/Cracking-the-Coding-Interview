@@ -18,7 +18,7 @@ def string_frequency(string):
             substring_frequencies.append((string[i]*letter_freq, letter_freq))
             substring_frequencies.append((string[i+1], 1))
             break
-        if string[i+1] == string[i]:
+        elif string[i+1] == string[i]:
             flag = True
             letter_freq += 1
             continue
